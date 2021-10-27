@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ChannelDemo</title>
+</head>
+<body>
+
+
+<div id="container" style="width:1000px">
+
+    <div id="header" style="background-color:White;" >
+        <h1 style="margin-bottom:0;">ChannelDemo</h1></div>
+
+    <div id="menu" style="background-color:White;height:900px;width:400px;float:left;">
+        <script src="../static/js/player.js">
+        </script>
+
+        <form id="player_form" >
+            User:
+            <input type="text" id="addr" name="addr" value="1">
+            <br>
+            Deposit:
+            <input type="text" id="deposit" name="deposit" value="10">
+
+            <br>
+            ChannelID:
+            <input type="text" id="channel" name="channel" value="player">
+
+            <br>
+            <input id="btn_join" type="button" value="Join" onclick="JoinChannel()">
+
+            <input id="btn_create" type="button" value="create" onclick="CreateChannel()">
+            <input id="btn_show" type="button" value="login" onclick="ShowInfo()">
+
+        </form>
+        <form id="send_form">
+            <br><br>
+            <p  id="playerContent" hidden>
+            To:<br>
+            <input id="text_to" type="text" name="address_to" value="1">
+            <br>
+            Ammount:<br>
+            <input id="text_amount" type="text" name="amount" value="1">
+            <br>
+                <input id="btn_send" type="button" value="send" onclick="SendTo()">
+                <input id="btn_exit" type="button" value="exit" onclick="ExitChannel()">
+                <input id="btn_dispute" type="button" value="dispute" onclick="Dispute()">
+
+                <br>
+            </p>
+
+
+
+
+        </form>
+    </div>
+
+    <div id="content" style="background-color:#EEEEEE;height:900px;width:600px;float:left;">
+
+    </div>
+
+    <div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+        GZU</div>
+
+</div>
+
+</body>
+</html>
